@@ -18,3 +18,4 @@ script in the master branch together with Travis-CI.
 
 ## Credits
 Thanks to [Gaohaoyang](https://github.com/Gaohaoyang) for providing the previous design and thus also the base layer of the new design
+
