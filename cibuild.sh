@@ -12,6 +12,10 @@ sed -i -e 's/url: "https:\/\/iluwatar.github.io"/url: "http:\/\/java-design-patt
 printf "\ngithub:\n  build_revision: " >> _config.yml
 git log --pretty=format:'%H' -n 1 >> _config.yml
 
+# test the failing urls
+curl -v https://sonarqube.com/api/badges/gate?key=com.iluwatar:java-design-patterns
+curl -v https://sonarqube.com/dashboard/index/com.iluwatar:java-design-patterns
+
 bundle exec jekyll build
 
 # - ignore everything below every webapp directory, so we dont mess with the source code
